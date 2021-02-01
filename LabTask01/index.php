@@ -16,6 +16,7 @@
     <a href="http://chewitup.net/cooking/how-to-make-butter-chicken/">Read The Full Article Here</a><br /><br />
 
     <h2>Subscribe to our newsletter</h2>
+    <a href="labTask.php">View Lab Task Here</a>
 
     <form action="/">
         <table>
