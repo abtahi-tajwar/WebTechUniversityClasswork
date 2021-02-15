@@ -68,7 +68,9 @@
             <td><input type="password" name="cpassword"></td>
             <td><?php echo $cpassV ?></td>
         </tr>
-        <input type="submit" value="submit">
+        <tr>
+            <td><input type="submit" value="submit"></td>
+        </tr>
         
     </table>
     </form>
