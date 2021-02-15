@@ -22,7 +22,7 @@
                 $emailV = "<li>Please enter a valid email</li>";
             }
 
-            if(!preg_match("/(?=.*[@#$%^&+=]).*$/", $password)) {
+            if(!preg_match("/(?=.*[@#$%]).*$/", $password)) {
                 $passV = "<li>Password atleast contain 1 special character</li>";
             } 
             if(strlen($password) < 6) {
