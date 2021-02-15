@@ -7,8 +7,10 @@
         $email = $_REQUEST["email"];
         $password = $_REQUEST["password"];
         $cpassword = $_REQUEST["cpassword"];
+        $gender = $_REQUEST["gender"];
+        $dob = $_REQUEST["dob"];
 
-        if(empty($username) || empty($email) || empty($password) || empty($cpassword)) {
+        if(empty($username) || empty($email) || empty($password) || empty($cpassword) || empty($gender) || empty($dob)) {
             $generalError = "Please fill up all the fields";
         } else {
             if(!preg_match("/[a-zA-Z0-9._]+/", $username)) {
@@ -69,10 +71,20 @@
             <td><?php echo $cpassV ?></td>
         </tr>
         <tr>
+            <td><label for="gender">Gender</label></td>
+            <td><input type="radio" name="gender" value="male">Male</td>
+            <td><input type="radio" name="gender" value="female">Female</td>
+            <td><input type="radio" name="gender" value="other">Other</td>
+        </tr>
+        <tr>
+            <td><label for="dob">Date of Birthd</label></td>
+            <td><input type="date" name="dob"></td>
+        </tr>
+        <tr>
             <td><input type="submit" value="submit"></td>
         </tr>
-        
     </table>
+    <h3><?php echo $generalError ?></h3>
     </form>
 </body>
 </html>
