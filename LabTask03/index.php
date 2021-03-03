@@ -1,3 +1,4 @@
+<?php include "database/database-manager.php"; ?>
 <?php include "includes/myform.php"; ?>
 
 
@@ -46,7 +47,7 @@
         </tr>
         <tr>
             <td><label for="fileUpload">Upload File</label></td>
-            <td><input type="file" name="fileUpload"><?php echo $file_status; ?></td>
+            <td><input type="file" name="fileUpload"></td>
         </tr>
         <tr>
             <td><input type="submit" value="submit"></td>
@@ -54,7 +55,6 @@
     </table>
     <h3><?php echo $generalError ?></h3>
     </form>
-
     <img src="<?php echo $target_file ?>" alt="">
 </body>
 </html>
