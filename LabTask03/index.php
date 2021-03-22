@@ -1,8 +1,6 @@
 <?php include "database/database-manager.php"; ?>
 <?php include "includes/myform.php"; ?>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
